@@ -7,9 +7,9 @@ import numpy as np
 import pickle 
 from torchvision.transforms import Normalize
 
-from bodymocap.models import hmr, SMPL, SMPLX
-from bodymocap import constants
-from bodymocap.utils.imutils import crop, crop_bboxInfo, process_image_bbox, process_image_keypoints, bbox_from_keypoints
+from .models import hmr, SMPL, SMPLX
+from . import constants
+from .utils.imutils import crop, crop_bboxInfo, process_image_bbox, process_image_keypoints, bbox_from_keypoints
 from mocap_utils.coordconv import convert_smpl_to_bbox, convert_bbox_to_oriIm
 import mocap_utils.geometry_utils as gu
 

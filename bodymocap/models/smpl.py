@@ -11,7 +11,7 @@ from smplx import SMPLX as _SMPLX
 # from bodymocap.models.body_models import ModelOutput
 from smplx.lbs import vertices2joints
 
-from bodymocap import constants
+from .. import constants
 
 from collections import namedtuple
 ModelOutput = namedtuple('ModelOutput',
