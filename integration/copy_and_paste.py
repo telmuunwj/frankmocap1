@@ -4,8 +4,8 @@ import sys
 import numpy as np
 import torch
 import pdb
-import mocap_utils.geometry_utils as gu
-from mocap_utils.coordconv import convert_smpl_to_bbox, convert_bbox_to_oriIm
+from ..mocap_utils import geometry_utils as gu
+from ..mocap_utils.coordconv import convert_smpl_to_bbox, convert_bbox_to_oriIm
 
 
 def get_kinematic_map(smplx_model, dst_idx):

@@ -2,7 +2,7 @@
 
 import os, sys, shutil
 import os.path as osp
-import general_utils as gnu
+from . import general_utils as gnu
 
 
 def main():

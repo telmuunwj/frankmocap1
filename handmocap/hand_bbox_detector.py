@@ -12,7 +12,7 @@ import torch
 import torchvision.transforms as transforms
 # from PIL import Image
 
-from bodymocap.body_bbox_detector import BodyPoseEstimator
+from ..bodymocap.body_bbox_detector import BodyPoseEstimator
 
 # Type agnostic hand detector
 from detectron2.config import get_cfg

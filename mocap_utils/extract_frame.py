@@ -3,7 +3,7 @@
 import os, sys, shutil
 import os.path as osp
 import subprocess as sp
-import general_utils as gnu
+from . import general_utils as gnu
 
 
 def extract_frame(video_dir, frame_dir):

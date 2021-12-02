@@ -4,7 +4,7 @@ import os, sys, shutil
 import os.path as osp
 import cv2
 import numpy as np
-import general_utils as gnu
+from . import general_utils as gnu
 
 
 def main():

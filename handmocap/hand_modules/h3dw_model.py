@@ -20,7 +20,7 @@ import cv2
 from . import resnet
 from .h3dw_networks import H3DWEncoder
 import time
-import mocap_utils.general_utils as gnu
+from ...mocap_utils import general_utils as gnu
 import smplx
 import pdb
 
