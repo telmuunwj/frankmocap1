@@ -29,11 +29,11 @@ hand_object_detector_path = './detectors/hand_object_detector'
 sys.path.append(hand_object_detector_path)
 from model.utils.config import cfg as cfgg
 
-from detectors.hand_object_detector.lib.model.rpn.bbox_transform import clip_boxes
-from detectors.hand_object_detector.lib.model.roi_layers import nms # might raise segmentation fault at the end of program
-from detectors.hand_object_detector.lib.model.rpn.bbox_transform import bbox_transform_inv
-from detectors.hand_object_detector.lib.model.utils.blob import im_list_to_blob
-from detectors.hand_object_detector.lib.model.faster_rcnn.resnet import resnet as detector_resnet 
+from ..detectors.hand_object_detector.lib.model.rpn.bbox_transform import clip_boxes
+from ..detectors.hand_object_detector.lib.model.roi_layers import nms # might raise segmentation fault at the end of program
+from ..detectors.hand_object_detector.lib.model.rpn.bbox_transform import bbox_transform_inv
+from ..detectors.hand_object_detector.lib.model.utils.blob import im_list_to_blob
+from ..detectors.hand_object_detector.lib.model.faster_rcnn.resnet import resnet as detector_resnet 
 
 
 class Third_View_Detector(BodyPoseEstimator):

@@ -15,11 +15,11 @@ import torchvision.transforms as transforms
 # 2D body pose estimator
 pose2d_estimator_path = './detectors/body_pose_estimator'
 sys.path.append(pose2d_estimator_path)
-from detectors.body_pose_estimator.pose2d_models.with_mobilenet import PoseEstimationWithMobileNet
-from detectors.body_pose_estimator.modules.load_state import load_state
-from detectors.body_pose_estimator.val import normalize, pad_width
-from detectors.body_pose_estimator.modules.pose import Pose, track_poses
-from detectors.body_pose_estimator.modules.keypoints import extract_keypoints, group_keypoints
+from ..detectors.body_pose_estimator.pose2d_models.with_mobilenet import PoseEstimationWithMobileNet
+from ..detectors.body_pose_estimator.modules.load_state import load_state
+from ..detectors.body_pose_estimator.val import normalize, pad_width
+from ..detectors.body_pose_estimator.modules.pose import Pose, track_poses
+from ..detectors.body_pose_estimator.modules.keypoints import extract_keypoints, group_keypoints
 
 
 class BodyPoseEstimator(object):
